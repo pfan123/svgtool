@@ -12,8 +12,8 @@ svgtool工具是一款快速合并svg，生成svg symbols的工具。
 
 ## 下载地址：
 
--[svgtool-1.0.0.dmg](https://github.com/pfan123/svgtool/releases/download/1.0.0/svgtool-1.0.0.dmg)
+ - [svgtool-1.0.0.dmg](https://github.com/pfan123/svgtool/releases/download/1.0.0/svgtool-1.0.0.dmg)
 
--[svgtool-win32-ia32.zip](https://github.com/pfan123/svgtool/releases/download/1.0.0/svgtool-win32-ia32.zip)
+ - [svgtool-win32-ia32.zip](https://github.com/pfan123/svgtool/releases/download/1.0.0/svgtool-win32-ia32.zip)
 
--[svgtool-win32-x64.zip](https://github.com/pfan123/svgtool/releases/download/1.0.0/svgtool-win32-x64.zip)
+ - [svgtool-win32-x64.zip](https://github.com/pfan123/svgtool/releases/download/1.0.0/svgtool-win32-x64.zip)
