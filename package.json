@@ -1,0 +1,42 @@
+{
+  "name": "svgtool",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "clean-css": "^3.4.18",
+    "html-minifier": "^2.1.4",
+    "electron-builder": "^5.6.2",
+    "electron-packager": "^7.0.4",
+    "electron-prebuilt": "^1.2.4",
+    "electron-winstaller": "^2.3.1",
+    "rimraf": "^2.5.2"
+  },
+  "scripts": {
+    "dev": "electron .",
+    "clean": "rm -rf ./dist",
+    "clean:osx": "rm -rf ./dist/osx",
+    "clean:win": "rm -rf ./dist/win",
+    "packager": "npm run clean && npm run packager:osx && npm run packager:win",
+    "packager:osx": "npm run clean:osx && electron-packager . \"svgtool\" --out=./dist/osx --platform=darwin --arch=x64 --version=1.2.4 --icon=./static/images/icon.icns --ignore=.git --ignore=dist --ignore=.sass-cache --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --prune",
+    "packager:win": "npm run clean:win && electron-packager . \"svgtool\" --out=./dist/win --platform=win32 --arch=x64 --version=1.2.4 --icon=./static/images/icon.ico --ignore=.git --ignore=dist --ignore=.sass-cache --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --prune",
+    "pack": "build --target dir",
+    "dist": "rimraf dist && build"
+  },
+  "build": {
+    "appId": "svgtool.id",
+    "app-category-type": "svgtool.app.category.type",
+    "win": {
+      "iconUrl": "http://jdc.jd.com/svg/static/images/icon.ico"
+    }
+  },
+  "description": "svgtool",
+  "devDependencies": {},
+  "keywords": [
+    "electron",
+    "svgtool",
+    "smybols"
+  ],
+  "author": "@pfan",
+  "license": "ISC"
+}
